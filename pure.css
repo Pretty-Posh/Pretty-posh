@@ -1,84 +1,53 @@
-html, body{
-    background-color: #facfe1;
-    font-size: calc(1rem+1vw);
+html{
+  font-size: 62.5%;
 }
 
-img{
-  max-width: 40%;
-  height: auto;
-    width: 30%;
-    min-width: 3%;
-    left: 35%;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    background-color: #f6b1cb;
-    margin-top: 100px;
-    margin-bottom: 130px;
-    border-radius: 20px;
-    box-shadow: #00FFD5 0px 0px 20px, #002BFF 0px 0px 40px, #FF00C8 0px 0px 60px;
-    animation: formGlow 20s ease infinite;
-    border-radius: 20px;
-
-}
-
-@keyframes formGlow {
-    0% {
-        box-shadow: #ff86cf 0px 0px 10px, #f45f5f 0px 0px 30px, #fa3fd1 0px 0px 60px;
-    }
-    50% {
-        box-shadow: #fa5757 0px 0px 10px, #fa53a4 0px 0px 30px, #fac67d 0px 0px 60px;
-    }
-    100% {
-        box-shadow: #f850a4 0px 0px 10px, #f270fe 0px 0px 30px, #fa76dd 0px 0px 60px;
-    }
-
-}
-.text {
-  position: relative;
-  color: rgb(20, 1, 1);
-}
-
-.topcenter {
-  position: relative;
-  top: 0;
-  top: 30px;
+body{
+  background-color: #111;
+  color: #fff;
   text-align: center;
-  font-family: "Sofia", sans-serif;
-  font-size: 40px;
-  color: rgb(113, 3, 60);
-  -webkit-text-stroke: 0.1px;
-  -webkit-text-stroke-color: rgb(241, 237, 237);
 }
-.bottomcenter {
-  position: relative;
-  top: 90px;
-  text-align: center;
-  font-family: Garamond, serif;
-  font-size: 15px;
-  color: rgb(19, 19, 19);
 
+.wrapper-main{
+  width: 1000px;
+  padding: 100px 0;
+  margin: 0 auto;
+  border: 4px solid blue;
 }
-.middle {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Times New Roman', serif;
-  font-size: 15px;
-  font: bold;
+
+h1{
+  font-size: 9.2rem;
 }
-hr {
-  margin: auto;
-  width: 40%;
+
+p{
+  font-size: 2.6rem;
 }
-time{
-    font-size: 20px;
+
+a{ 
+  display: block;
+  width: fit-content;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 0 auto;
+  font-size: 2.6rem
 }
-/* phones */
-@media (max-width: 600) {
-  .card-container {
-    flex-direction: column;
+
+@media only screen and (max-width: 600px) {
+
+  .wrapper-main {
+  width: 100%;
+  background-color: orange;
   }
+
 }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+  .wrapper-main {
+  width: 100%;
+  background-color: red;
+  }
+
+}
+
+/*  <600px, 601px, 768, 992px, 1200px */
