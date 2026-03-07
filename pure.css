@@ -5,8 +5,22 @@ body{
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
 }
+.title{
+  align-items: center;
+  text-align: center;
+  color: #e2035c;
+}
+.section-p1{
+  padding: 40px 80px;
+}
+
+p{
+  font-size: 1rem;
+}
+
+/* BANNER IN HOME PAGE */
 .bannerh1{
-  color: #f80667;
+  color: #220913;
   font-size: 35px;
   margin-bottom: 3px;
 }
@@ -17,22 +31,29 @@ body{
 }
 .bannerh3{
   font-size: 20px;
+  color: #fbfafa;
+  background-color: #efe702;
+  border-radius: 50px;
+  padding: 10px;
 }
-p{
-  font-size: 1rem;
-}
+
+/* TOP NAVIGATION */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 30px;
   background:#fef5f9;
   box-shadow: 0 1px 15px rgb(251, 194, 223);
+  z-index: 999;
+  position: static;
+  top: 0;
+  left: 0;
 }
-
 .logo{
   width: 60px;
   cursor: pointer;
+  margin-right: 180px;
 }
 .logo:hover {
   background-color: #f9a5c7;
@@ -44,10 +65,10 @@ header {
   list-style: none;
   background-color: #fef5f9;
   overflow: hidden;
-  position: fixed;
+  margin-right: 10px;
 }
 .topnav li{
-  display: inline-block;
+  display:inline-block;
 }
 /* Style the links inside the navigation bar */
 .topnav li a {
@@ -87,19 +108,19 @@ header {
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
 
-  .wrapper-main {
+  .body {
   width: 100%;
   }
-
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
-  .wrapper-main {
+  .body {
   width: 100%;
   }
 
 }
+
 /*  <600px, 601px, 768, 992px, 1200px */
 
 
@@ -117,4 +138,102 @@ header {
   align-items: flex-start;
   justify-content: center;
 }
+.bannerbutton{
+  border: 0;
+  color: #fd1388;
+  padding: 20px 20px 20px 20px;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #fde2ef;
+  box-shadow: #fe448e;
+  border-radius: 90px;
+  margin-top: 10px;
+}
 
+
+/* Popular Now */
+.popular{
+  font-size: x-large;
+}
+
+
+
+
+
+/* About Page */
+.about, .about:before, .about:after {
+  box-sizing: inherit;
+  margin: 40px;
+  justify-items: center;
+}
+
+.column {
+  float: left;
+  width: 31%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.column:hover{
+  background-color: rgb(253, 233, 236);
+}
+.img-card{
+  padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .row{
+    width: 70%;
+  }
+}
+.namecard{
+  font-size: large;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.desc-card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.job{
+  font-style: italic;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button-card {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(243, 242, 242);
+  background-color: #ffaaaa;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-card:hover {
+  background-color: #fc6262;
+}
