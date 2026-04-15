@@ -13,8 +13,12 @@ body{
 .section-p1{
   padding: 40px 80px;
 }
+.section-m1{
+  padding: 40px 0px;
+}
 h1{
   font-size: 35px;
+  color: #fc1672;
 }
 h2{
   font-size: 20px;
@@ -22,26 +26,14 @@ h2{
 h3{
   font-size: 17px;
 }
-
-
-/* BANNER IN HOME PAGE */
-.bannerh1{
-  color: #220913;
-  font-size: 35px;
-  margin-bottom: 3px;
-}
-.bannerh2{
-  font-size: 20px;
-  color: #fbfafa;
-  background-color: #efe702;
-  border-radius: 50px;
-  padding: 10px;
-}
-.bannerh3{
+h4{
   font-size: 17px;
-  margin-bottom: 15px;
-  color: #1f201d;
 }
+p{
+  font-size: 15px;
+  margin: 2px 2px;
+}
+
 
 
 /* TOP NAVIGATION */
@@ -53,7 +45,6 @@ header {
   background:#fef5f9;
   box-shadow: 0 1px 15px rgb(251, 194, 223);
   z-index: 999;
-  position: static;
   top: 0;
   left: 0;
 }
@@ -61,6 +52,7 @@ header {
   width: 60px;
   cursor: pointer;
   margin-right: 180px;
+  display: flex;
 }
 .logo:hover {
   background-color: #f9a5c7;
@@ -133,11 +125,11 @@ header {
 
 /* HOME PAGE */
 
-/* BANNER */
-#banner{
+/* BANNER 1*/
+#banner1{
   background-image: url("/images/items/multi-ring-transparent.png");
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
   padding: 0 40px;
   display: flex;
@@ -163,6 +155,26 @@ header {
   color: #ffffff;
   box-shadow: #f9a5c7;
 }
+
+/* BANNER IN HOME PAGE */
+.bannerh1{
+  color: #220913;
+  font-size: 35px;
+  margin-bottom: 3px;
+}
+.bannerh2{
+  font-size: 20px;
+  color: #fbfafa;
+  background-color: #fe45b7;
+  border-radius: 50px;
+  padding: 10px;
+}
+.bannerh3{
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #1f201d;
+}
+
 
 /* Popular Now */
 .popular{
@@ -211,11 +223,109 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* BANNER 2*/
+#banner2{
+  background-image: url("/images/items/hairclip-transparent.png");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  padding: 0 40px;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.bannerbutton{
+  border: 0;
+  color: #fd1388;
+  padding: 20px 20px;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #fde2ef;
+  box-shadow: #fe448e;
+  border-radius: 90px;
+  margin-top: 10px;
+}
+.bannerbutton:hover{
+  background-color: #f28db6;
+  color: #ffffff;
+  box-shadow: #f9a5c7;
+}
+
+/* NEWSLETTER */
+#newsletter {
+  background-color: #fde2ef;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #f6cee5;
+}
+
+#newsletter h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fd1388;
+}
+
+#newsletter p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#newsletter .form {
+  display: flex;
+  justify-content: center;
+}
+
+#newsletter .form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #fd1388;
+  border-radius: 5px 0 0 5px;
+}
+
+#newsletter .form button {
+  padding: 10px 20px;
+  background-color: #fd1388;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 
-
-
+/* FOOTER */
+footer {
+  background-color: #fef5f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col{
+  background-color: #fef5f9;
+  display: flex;
+  flex-direction: column;
+}
+.img-footer{
+  width: 100px;
+  margin: 0 10px;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
 
 
 
