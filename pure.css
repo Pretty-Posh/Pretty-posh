@@ -28,6 +28,7 @@ h3{
 }
 h4{
   font-size: 17px;
+  margin-bottom: 5px;
 }
 p{
   font-size: 15px;
@@ -230,7 +231,7 @@ header {
 #banner2{
   background-image: url("/images/items/hairclip-transparent.png");
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-size: cover;
   padding: 0 40px;
   display: flex;
@@ -302,7 +303,9 @@ header {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
-
+#newsletter .form button:hover {
+  background-color: #d10054;
+}
 
 /* FOOTER */
 footer {
@@ -315,16 +318,46 @@ footer .col{
   background-color: #fef5f9;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 20px;
+  margin-bottom: 20px;
+}
+footer .col h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  color: #e2035c;
+}
+
+footer .col p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
 }
 .img-footer{
   width: 100px;
-  margin: 0 10px;
+  margin-bottom: 10px;
 }
 .copyright{
+  font-size: 12px;
+  align-items: start;
+  margin: 50px 20px;
+}
+.follows{
+  justify-content: space-between;;
+  margin-top: 30px;
+}
+.icon{
+  width: 90px;
+  justify-content: space-between;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
+  flex-direction: row;
+  padding-right: 5px;
 }
 
 
