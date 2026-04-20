@@ -39,22 +39,23 @@ p{
 
 /* TOP NAVIGATION */
 header {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 30px;
   background:#fef5f9;
   box-shadow: 0 1px 15px rgb(251, 194, 223);
   z-index: 999;
   top: 0;
   left: 0;
+  position: sticky;
 }
 .logo{
   width: 60px;
   cursor: pointer;
-  margin-right: 180px;
-  display: flex;
+  display:flex;
 }
+
 .logo:hover {
   background-color: #f9a5c7;
   border-radius: 15px;
@@ -82,9 +83,9 @@ header {
 /* Change the color of links on hover */
 .topnav li a:hover {
   background-color: #f9a5c7;
-  border-radius: 50px;
+  border-radius: 40px;
   color: black;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .material-symbols-outlined {
@@ -103,25 +104,107 @@ header {
   padding: 10% 0px;
 }
 
-
+#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
 
-  .body {
-  width: 100%;
+@media (max-width:799px) {
+  .section-p1{
+    padding: 40px 40px;
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 200px;
+    background-color: #fef5f9;
+    box-shadow: 1px 40px 60px rgb(251, 194, 223);
+    padding: 50px 0 0 20px;
+    transition: 0.3s;
+  }
+  .topnav.active {
+    left: 0;
+  }
+  .topnav li {
+    margin-top: 25px;
+  }
+  #mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  #banner1{
+    height: 70vh;
+    padding: 0 80px;
+    background-position: center;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    padding: 10px 10px;
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+    padding-top: 20px;
+  }
+  #product1 .pro{
+    margin: 15px;
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-
-  .body {
-  width: 100%;
+@media (max-width: 477px) {
+  .section-p1{
+    padding: 20px;
   }
-
+  #header{
+    padding: 10px 30px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  #banner1{
+  padding: 0 20px;
+  background-position: 50%;
+  }
+  #banner2{
+  padding: 0 20px;
+  }
+  .bannerh1{
+  font-size: 25px;
+  }
+  .bannerh2{
+  font-size: 15px;
+  }
+  .bannerh3{
+  font-size: 13px;
+  }
+  footer .col{
+   left: 0;
+   margin: 0;
+  }
 }
-
-/*  <600px, 601px, 768, 992px, 1200px */
 
 
 /* HOME PAGE */
@@ -130,7 +213,7 @@ header {
 #banner1{
   background-image: url("/images/items/multi-ring-transparent.png");
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-size: cover;
   padding: 0 40px;
   display: flex;
@@ -146,7 +229,7 @@ header {
   background-repeat: no-repeat;
   cursor: pointer;
   font-weight: 600;
-  background-color: #fde2ef;
+  background-color: #fed0e6;
   box-shadow: #fe448e;
   border-radius: 90px;
   margin-top: 10px;
@@ -345,11 +428,11 @@ footer a{
 }
 .copyright{
   font-size: 12px;
-  align-items: start;
+  align-items: center;
   margin: 50px 20px;
 }
 .follows{
-  justify-content: space-between;;
+  justify-content: space-between;
   margin-top: 30px;
 }
 .icon{
