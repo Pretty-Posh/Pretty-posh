@@ -1,4 +1,4 @@
-
+/* BASE STYLES */
 body{
   background-color: #fef5f9;
   color: #000000;
@@ -87,7 +87,7 @@ header {
   color: black;
   padding: 10px 10px;
 }
-
+/* ICON FONT AWESOME */
 .material-symbols-outlined {
   color: #fd5799;
   transition: all 0.3 ease 0s;
@@ -113,6 +113,46 @@ header {
 }
 
 /* MEDIA QUERIES */
+/* MAX WIDTH */
+@media (max-width:1920px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 200px;
+    background-color: #fef5f9;
+    box-shadow: 1px 40px 60px rgb(251, 194, 223);
+    padding: 50px 0 0 20px;
+    transition: 0.3s;
+  }
+  .topnav.active {
+    left: 0;
+  }
+  .topnav li {
+    margin-top: 25px;
+  }
+  #mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    padding: 10px 10px;
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+  }
+}
+
 /* IPAD */
 @media (max-width:1024px) {
   .section-p1{
@@ -146,7 +186,7 @@ header {
   #banner1{
     height: 70vh;
     padding: 0 50px;
-    background-position: top 50% right 50%;
+    background-position: top 40% right 50%;
   }
   #banner2{
     height: 70vh;
@@ -187,11 +227,11 @@ header {
     font-size: 13px;
   }
   #banner1{
-  padding: 0 20px;
+  padding: 0 10px;
   background-position: 50%;
   }
   #banner2{
-  padding: 0 20px;
+  padding: 0 10px;
   background-position: 30%;
   }
   .bannerh1{
@@ -210,11 +250,11 @@ header {
 
 /* BANNER 1*/
 #banner1{
-  background-image: url("/images/items/multi-ring-transparent.png");
+  background-image: url("/images/items/multi\ ring\ -\ bg\ 1.png");
   width: 100%;
   height: 80vh;
   background-size: cover;
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -239,7 +279,6 @@ header {
   box-shadow: #f9a5c7;
 }
 
-/* BANNER IN HOME PAGE */
 .bannerh1{
   color: #220913;
   font-size: 35px;
@@ -263,7 +302,27 @@ header {
 .popular{
   font-size: x-large;
 }
-
+.shop-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.popular{
+  border: 0;
+  color: #fd1388;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #fed0e6;
+  box-shadow: #fe448e;
+  border-radius: 90px;
+}
+button.popular:hover{
+  background-color: #f28db6;
+  color: #ffffff;
+  box-shadow: #f9a5c7;
+}
 .pro-container{
   display: flex;
   justify-content: space-between;
@@ -296,6 +355,7 @@ header {
   margin-top: 10px;
   text-align: start;
   padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 #product1 .pro .description span{
@@ -306,14 +366,22 @@ header {
   padding: 5px 0;
   font-size: 17px;
 }
+.price{
+  font-size: 15px;
+  color: #fb66a2;
+  align-items:end ;
+  position: absolute;
+  margin-top: 10px;
+  bottom: 15px;
+}
 
 /* BANNER 2*/
 #banner2{
-  background-image: url("/images/items/hairclip-transparent.png");
+  background-image: url("/images/items/hairclip-bg.png");
   width: 100%;
   height: 90vh;
   background-size: cover;
-  padding: 0 30px;
+  padding: 0 25px;
   display: flex;
   flex-direction:column;
   align-items: flex-end;
@@ -340,7 +408,6 @@ header {
 
 /* NEWSLETTER */
 #newsletter {
-  background-color: #fde2ef;
   padding: 40px 20px;
   display: flex;
   justify-content: space-between;
@@ -507,4 +574,18 @@ footer a{
 
 .button-card:hover {
   background-color: #fc6262;
+}
+
+
+
+/* SHOP PAGE */
+
+/* BANNER 1*/
+#bannershop{
+  background-image: url("/images/Pretty\ Posh\ -\ Banner1.png");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  padding: 0 30px;
+  background-position: left 50% top 50%;
 }
