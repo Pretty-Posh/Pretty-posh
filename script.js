@@ -1,6 +1,7 @@
 const bar = document.getElementById('bar');
 const nav = document.getElementById('topnav');
 const close = document.getElementById('close');
+const wish = document.getElementsByClassName('wish-btn')
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -19,6 +20,8 @@ if (nav) {
         nav.classList.remove('active');
     })
 }
+
+i
 
 // SHOP PAGE //
 const filter = document.querySelector('button.popular');

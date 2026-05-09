@@ -110,7 +110,6 @@ header {
 }
 
 #mobile{
-  display: none;
   align-items: center;
 }
 #close{
@@ -128,7 +127,7 @@ header {
     position: fixed;
     top: 0;
     left: -300px;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     background-color: #fef5f9;
     box-shadow: 1px 40px 60px rgb(251, 194, 223);
@@ -213,7 +212,6 @@ header {
   #product1 .pro{
     margin: 15px;
   }
-  
 }
 /* IPHONE */
 @media (max-width: 420px) {
@@ -221,35 +219,75 @@ header {
     padding: 10px 30px;
   }
   h1{
-    font-size: 25px;
+    font-size: 20px;
   }
   h2 {
-    font-size: 15px;
-  }
+    font-size: 12px;
+  }s
   h3 {
-    font-size: 13px;
+    font-size: 10px;
   }
   h4 {
-    font-size: 13px;
+    font-size: 10px;
   }
+  /* Banner 1 */
   #banner1{
   padding: 0 10px;
   background-position: 50%;
   }
+  #banner1 .bannerh1{
+  font-size: 20px;
+  }
+  #banner1 .bannerh2{
+  font-size: 14px;
+  }
+  #banner1.bannerh3{
+  font-size: 10px;
+  }
+  #banner1 .bannerbutton {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+  /* Banner 2 */
   #banner2{
   padding: 0 10px;
-  background-position: 30%;
+  background-position: top 50px left 33%;
   }
-  .bannerh1{
-  font-size: 25px;
+  #banner2 .bannerh1{
+  font-size: 20px;
   }
-  .bannerh2{
-  font-size: 15px;
+  #banner2 .bannerh2{
+  font-size: 12px;
   }
-  .bannerh3{
-  font-size: 13px;
+  #banner2.bannerh3{
+  font-size: 10px;
   }
-
+  #banner2 .bannerbutton {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+  /* Popular Now */
+  #product1 h1{
+    font-size: 20px;
+  }
+  /* Newsletter */
+  #newsletter .newstext {
+    padding: 0;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+}
+  #newsletter h4{
+    font-size: 18px;
+    text-align: center;
+  }
+  #newsletter p{
+    font-size: 13px;
+    text-align: center;
+  }
+  #newsletter .form{
+    width: 100%;
+  }
   /* Product Page */
   #pro-detail{
     display: flex;
@@ -261,7 +299,6 @@ header {
   }
   #pro-detail .single-pro-desc{
     width: 100%;
-    padding-top: 20px;
   }
 }
 
@@ -430,7 +467,7 @@ button.popular:hover{
 
 /* NEWSLETTER */
 #newsletter {
-  padding: 40px 20px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -440,14 +477,12 @@ button.popular:hover{
 }
 
 #newsletter h4 {
-  font-size: 24px;
   margin-bottom: 10px;
   font-weight: 600;
   color: #fd1388;
 }
 
 #newsletter p {
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -616,6 +651,20 @@ footer a{
   padding: 0 30px;
   background-position: left 50% top 50%;
 }
+.wish-btn{
+  border: none;
+  outline: 0;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(253, 76, 129);
+  text-align: right;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 6px;
+  display: none;
+}
 .shop-btn{
   border: none;
   outline: 0;
@@ -637,7 +686,7 @@ footer a{
 }
 
 #pro-detail .single-pro-img{
-  width: 40%;
+  width: 50%;
   margin-right: 50px;
 }
 .small-img-group{
@@ -650,7 +699,7 @@ footer a{
   cursor: pointer;
 }
 #pro-detail .single-pro-desc{
-  width: 50%;
+  width: 100%;
   padding-top: 30px;
 }
 #pro-detail .single-pro-desc h2{
@@ -675,7 +724,7 @@ footer a{
 #pro-detail .single-pro-desc select{
   display: block;
   padding: 5px 10px;
-  border: 1px solid #fcdeea;
+  border: 1px solid #ffd9e8;
   border-radius: 5px;
   margin-bottom: 10px;
   color: #ff277d;
@@ -692,7 +741,7 @@ footer a{
   margin-right: 10px;
   border: 1px solid #fdcde1;
   border-radius: 5px;
-    color: #ff277d;
+  color: #ff277d;
 }
 #pro-detail .single-pro-desc input:focus{
   outline: none;
