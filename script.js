@@ -1,7 +1,6 @@
 const bar = document.getElementById('bar');
 const nav = document.getElementById('topnav');
 const close = document.getElementById('close');
-const wish = document.getElementsByClassName('wish-btn')
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -20,8 +19,15 @@ if (nav) {
         nav.classList.remove('active');
     })
 }
+document.addEventListener('click', function (event) {
+    const nav = document.querySelector('topnav');       // your nav sidebar
+    const bar = document.querySelector('bar'); // your ☰ button
 
-i
+    // Check if the click is OUTSIDE the navbar and NOT on the bar
+    if (!nav.contains(event.target) && !bar.contains(event.target)) {
+        nav.classList.remove('active'); // close the navbar
+    }
+});
 
 // SHOP PAGE //
 const filter = document.querySelector('button.popular');
@@ -36,18 +42,18 @@ if (filter) {
 // PRODUCT PAGE //
 const mainimg = document.getElementById('main-img');
 const smallimg = document.getElementsByClassName('small-img');
-smallimg[0].onclick = function() {
+smallimg[0].onclick = function () {
     mainimg.src = smallimg[0].src;
 }
-smallimg[1].onclick = function() {
+smallimg[1].onclick = function () {
     mainimg.src = smallimg[1].src;
 }
-smallimg[2].onclick = function() {
+smallimg[2].onclick = function () {
     mainimg.src = smallimg[2].src;
 }
-smallimg[3].onclick = function() {
+smallimg[3].onclick = function () {
     mainimg.src = smallimg[3].src;
 }
-smallimg[4].onclick = function() {
+smallimg[4].onclick = function () {
     mainimg.src = smallimg[4].src;
 }
