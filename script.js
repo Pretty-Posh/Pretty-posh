@@ -14,18 +14,13 @@ if (close) {
     })
 }
 
-if (nav) {
-    nav.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
-document.addEventListener('click', function (event) {
-    const nav = document.querySelector('topnav');       // your nav sidebar
-    const bar = document.querySelector('bar'); // your ☰ button
+// ✅ Close when clicking OUTSIDE the navbar
+document.addEventListener('click', function(event) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnBar = bar.contains(event.target);
 
-    // Check if the click is OUTSIDE the navbar and NOT on the bar
-    if (!nav.contains(event.target) && !bar.contains(event.target)) {
-        nav.classList.remove('active'); // close the navbar
+    if (!isClickInsideNav && !isClickOnBar) {
+        nav.classList.remove('active');
     }
 });
 

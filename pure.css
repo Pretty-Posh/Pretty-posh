@@ -636,9 +636,21 @@ footer a {
   border-radius: 10px;
 }
 
-
-
-
+/* TERMS & CONDITIONS */
+.terms-conditions{
+  text-align: justify;
+  margin: 30px 30px;
+  align-items: center;
+}
+[data-custom-class="title"], [data-custom-class="title"] * {
+    text-align: center;
+}
+[data-custom-class="subtitle"], [data-custom-class="subtitle"] * {
+    text-align: center;
+}
+[data-custom-class="body_text"], [data-custom-class="body_text"] * {
+    text-align: justify;
+}
 
 /* MEDIA QUERIES */
 /* MAX WIDTH */
