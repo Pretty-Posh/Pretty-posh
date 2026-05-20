@@ -650,7 +650,18 @@ footer a {
 }
 [data-custom-class="body_text"], [data-custom-class="body_text"] * {
     text-align: justify;
+  }
+  .msonormal {
+    margin: 0 30px;
+  }
+
+/* RETURN POLICY */
+.return-policy {
+  text-align: justify;
+  align-items: center;
+  margin: 40px;
 }
+
 
 /* MEDIA QUERIES */
 /* MAX WIDTH */
